@@ -5,8 +5,12 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 ## integrantes do grupo
 * Miguel Andrade (mjfa@cesar.school)
 * André Burle (abc3@cesar.school)
+* Alan Matos (amm3@cesar.school)
+* Nathalia de Mello (nmc@cesar.school)
+* Gabriela Monteiro (gmc2@cesar.school)
+* Eloi Pontual (epmcma@cesar.school)
 
-# entraga 01
+# entrega 01
 ## link para o docs com a historias
 * https://docs.google.com/document/d/14qaRBfjsW6TjoHn5hw-XrwBkPvVugJET0_-HATUGr8k/edit?tab=t.0
 
