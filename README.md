@@ -1,4 +1,4 @@
-# CarTech
+w# CarTech
 ## A CarTech é a sua plataforma inovadora para compra, venda e exposição de veículos. Com um sistema moderno e intuitivo, conectamos compradores e vendedores de forma rápida, segura e eficiente.
 Nosso diferencial está na transparência e tecnologia, proporcionando uma experiência única para quem deseja adquirir ou revender um carro. Além disso, oferecemos um espaço exclusivo para exposição de veículos, permitindo que colecionadores, entusiastas e concessionárias apresentem seus modelos de forma profissional e atrativa. Seja para encontrar o carro dos seus sonhos, vender com facilidade ou simplesmente exibir sua máquina, a CarTech é o lugar certo! 🚘✨
 
@@ -21,4 +21,4 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 * https://www.figma.com/design/gB3OKDkQhzJjvEvlXsjwm8/carTech?node-id=0-1&p=f&t=cK5x2RcNyHYmJue3-0
 
 ## link para screencast do figma
-*
+* https://www.youtube.com/watch?v=Hru6qHmvxdk
