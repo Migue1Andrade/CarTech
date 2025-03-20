@@ -22,3 +22,6 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 
 ## link para screencast do figma
 * https://www.youtube.com/watch?v=Hru6qHmvxdk
+
+## foto do jira entrega 1
+<img width="1143" alt="Captura de Tela 2025-03-19 às 21 37 12" src="https://github.com/user-attachments/assets/b6471def-3a97-4c9c-821f-0a316f1b4ac0" />
