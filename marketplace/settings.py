@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 'channels',
-   # 'core',
-   # 'chat',
+    'core',
+    'chat',
     'carros'
 ]
 
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'marketplace.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'utils.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
