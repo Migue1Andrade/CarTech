@@ -15,7 +15,8 @@ def new(request):
         mileage = request.POST.get('mileage')
         fuel_type = request.POST.get('fuel_type')
         type = request.POST.get('type')
-        price = request.POST.get('price')
+        price_str = request.POST.get('price')
+        price = float(price_str.replace('.', '').replace(',', '.'))
         description = request.POST.get('description')
         image = request.FILES.get('image')
 
@@ -50,7 +51,8 @@ def edit(request, pk):
         car.mileage = request.POST.get('mileage')
         car.fuel_type = request.POST.get('fuel_type')
         car.type = request.POST.get('type')
-        car.price = request.POST.get('price')
+        price_str = request.POST.get('price')
+        car.price = float(price_str.replace('.', '').replace(',', '.'))
         car.description = request.POST.get('description')
 
         if 'image' in request.FILES:
