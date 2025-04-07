@@ -3,27 +3,25 @@
 {% block title %}{{ title }}{% endblock title %}
 
 {% block content %}
-
 <div class="px-4">
-  <form method="POST" action="." class="max-w-[600px] my-[60px] mx-auto p-6 bg-white rounded-lg" enctype='multipart/form-data'>
+  <form method="POST" action="." class="max-w-[600px] my-[60px] mx-auto p-6 bg-white rounded-lg" enctype="multipart/form-data">
     <h1 class="text-2xl text-black text-center">Criar um anúncio</h1>
     {% csrf_token %}
-  
-    <div id="forms"class="flex flex-col gap-4">
-      {{ form.as_p }}
+
+    <div class="flex flex-col gap-4">
+      <input type="text" name="car_model" placeholder="Modelo" class="border rounded px-3 py-2" required>
+      <input type="text" name="brand" placeholder="Marca" class="border rounded px-3 py-2" required>
+      <input type="number" name="year" placeholder="Ano" class="border rounded px-3 py-2" required>
+      <input type="text" name="color" placeholder="Cor" class="border rounded px-3 py-2" required>
+      <input type="number" name="mileage" placeholder="Quilometragem" class="border rounded px-3 py-2" required>
+      <input type="text" name="fuel_type" placeholder="Combustível" class="border rounded px-3 py-2" required>
+      <input type="text" name="type" placeholder="Tipo de carroceria" class="border rounded px-3 py-2" required>
+      <input type="number" step="0.01" name="price" placeholder="Preço" class="border rounded px-3 py-2" required>
+      <textarea name="description" placeholder="Descrição" class="border rounded px-3 py-2" rows="4" required></textarea>
+      <input type="file" name="image" class="border rounded px-3 py-2" required>
     </div>
-  
-    {% if form.errors %}
-      {% for field in form %}
-        {% for error in field.errors %}
-          <div class="mb-5 p-4 rounded-xl bg-red-300 text-white">
-            <p>{{ error|escape }}</p>
-          </div>
-        {% endfor %}
-      {% endfor %}
-    {% endif %}
-  
-    <button id="botao-criar-produto"class="w-full text-base text-white mt-4 bg-sky-500 hover:bg-sky-600 transition-colors px-4 py-2 rounded-lg">Criar produto</button>
+
+    <button class="w-full text-base text-white mt-4 bg-sky-500 hover:bg-sky-600 transition-colors px-4 py-2 rounded-lg">Criar produto</button>
   </form>
 </div>
 {% endblock %}

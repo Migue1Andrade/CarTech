@@ -3,33 +3,33 @@
 {% block title %}Registro{% endblock %}
 
 {% block content %}
-
 <div class="px-4">
-  <form method="POST" action="." class="max-w-[600px] my-[60px] mx-auto p-6 bg-white rounded-lg" enctype='multipart/form-data'>
+  <form method="POST" action="." class="max-w-[600px] my-[60px] mx-auto p-6 bg-white rounded-lg" enctype="multipart/form-data">
     <h1 class="text-2xl text-black text-center mb-4">Registrar-se</h1>
     {% csrf_token %}
 
     <div class="mb-5">
       <label class="text-black">Nome de usuário</label>
-      <input id='input-username' type="text" name="username" class="w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400">
+      <input id="input-username" type="text" name="username" class="w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400" required>
     </div>
 
     <div class="mb-5">
       <label class="text-black">Senha</label>
-      <input id='input-password' type="password" name="password1" class="w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400">
+      <input id="input-password" type="password" name="password1" class="w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400" required>
     </div>
 
     <div class="mb-5">
       <label class="text-black">Repetir senha</label>
-      <input id='input-repassword' type="password" name="password2" class="w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400">
+      <input id="input-repassword" type="password" name="password2" class="w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400" required>
     </div>
-    {% if form.errors %}
-      {% for key, value in form.errors.items %}
-        <p class="text-red-400">{{ value }}</p>
+
+    {% if messages %}
+      {% for message in messages %}
+        <p class="text-red-500 text-sm">{{ message }}</p>
       {% endfor %}
     {% endif %}
 
-    <button id='cadastro' class="w-full text-base text-white mt-4 bg-sky-500 hover:bg-sky-600 transition-colors px-4 py-2 rounded-lg">Registrar</button>
+    <button id="cadastro" class="w-full text-base text-white mt-4 bg-sky-500 hover:bg-sky-600 transition-colors px-4 py-2 rounded-lg">Registrar</button>
 
     <a class="mt-6 flex justify-center" href="/login/">Já possui uma conta? Faça login</a>
   </form>

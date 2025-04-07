@@ -1,106 +1,36 @@
-from django import forms
-from .models import Car
 
-INPUT_CLASSES = 'w-full mt-2 px-4 py-2 rounded-xl border border-2 border-gray-400'
+def validar_dados_carro(data, arquivos=None):
+    erros = []
 
-class NewCarForm(forms.ModelForm):
-  class Meta:
-    model = Car
-    fields = ('brand', 'car_model', 'mileage', 'year', 'fuel_type', 'type', 'price', 'color', 
-              'image', 'description')
-    labels = {
-      'brand': 'Marca',
-      'car_model':'Modelo',
-      'year':'Ano',
-      'mileage': 'Quilometragem', 
-      'fuel_type':'Tipo de Combustível', 
-      'type': 'Estado do Veículo',
-      'price': 'Preço',
-      'color':'Cor',
-      'description': 'Descrição',
-      'image': 'Imagem',
-    }
+    campos_obrigatorios = [
+        'brand', 'car_model', 'mileage', 'year', 'fuel_type',
+        'type', 'price', 'color', 'description'
+    ]
 
-    widgets = {
-      'brand': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'car_model': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'year': forms.NumberInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'mileage': forms.NumberInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'type': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'fuel_type': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'price': forms.NumberInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'color': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'description': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'image': forms.FileInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-    }
-  
-class EditCarForm(forms.ModelForm):
-  class Meta:
-    model = Car
-    fields = ('brand', 'car_model', 'mileage', 'year', 'fuel_type', 'type', 'price', 'color', 'image', 'description')
-    labels = {
-      'brand': 'Marca',
-      'car_model':'Modelo',
-      'year':'Ano',
-      'mileage': 'Quilometragem', 
-      'fuel_type':'Tipo de Combustível', 
-      'type': 'Estado do Veículo',
-      'price': 'Preço',
-      'color':'Cor',
-      'description': 'Descrição',
-      'image': 'Imagem',
-    }
+    for campo in campos_obrigatorios:
+        if not data.get(campo):
+            erros.append(f'O campo {campo} é obrigatório.')
 
-    widgets = {
-      'brand': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'car_model': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'year': forms.NumberInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'mileage': forms.NumberInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'type': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'fuel_type': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'price': forms.NumberInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'color': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'description': forms.TextInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-      'image': forms.FileInput(attrs={
-        'class': INPUT_CLASSES
-      }),
-    }
+    try:
+        if data.get('year') and (int(data.get('year')) < 1900 or int(data.get('year')) > 2100):
+            erros.append('Ano inválido.')
+    except ValueError:
+        erros.append('Ano deve ser um número.')
 
+    try:
+        if data.get('mileage') and int(data.get('mileage')) < 0:
+            erros.append('Quilometragem deve ser um número positivo.')
+    except ValueError:
+        erros.append('Quilometragem deve ser um número.')
+
+    try:
+        if data.get('price') and float(data.get('price')) < 0:
+            erros.append('Preço deve ser um valor positivo.')
+    except ValueError:
+        erros.append('Preço deve ser um número válido.')
+
+    if arquivos:
+        if not arquivos.get('image'):
+            erros.append('A imagem é obrigatória.')
+
+    return erros

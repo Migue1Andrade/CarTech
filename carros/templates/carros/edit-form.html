@@ -3,27 +3,25 @@
 {% block title %}{{ title }}{% endblock title %}
 
 {% block content %}
-
 <div class="px-4">
-  <form method="POST" action="." class="max-w-[600px] my-[60px] mx-auto p-6 bg-white rounded-lg" enctype='multipart/form-data'>
+  <form method="POST" action="." class="max-w-[600px] my-[60px] mx-auto p-6 bg-white rounded-lg" enctype="multipart/form-data">
     <h1 id="atualizar_carro" class="text-2xl text-black text-center">Atualizar carro</h1>
     {% csrf_token %}
-  
-    <div id="forms"class="flex flex-col gap-4">
-      {{ form.as_p }}
+
+    <div class="flex flex-col gap-4">
+      <input type="text" name="car_model" value="{{ car.car_model }}" placeholder="Modelo" class="border rounded px-3 py-2" required>
+      <input type="text" name="brand" value="{{ car.brand }}" placeholder="Marca" class="border rounded px-3 py-2" required>
+      <input type="number" name="year" value="{{ car.year }}" placeholder="Ano" class="border rounded px-3 py-2" required>
+      <input type="text" name="color" value="{{ car.color }}" placeholder="Cor" class="border rounded px-3 py-2" required>
+      <input type="number" name="mileage" value="{{ car.mileage }}" placeholder="Quilometragem" class="border rounded px-3 py-2" required>
+      <input type="text" name="fuel_type" value="{{ car.fuel_type }}" placeholder="Combustível" class="border rounded px-3 py-2" required>
+      <input type="text" name="type" value="{{ car.type }}" placeholder="Tipo de carroceria" class="border rounded px-3 py-2" required>
+      <input type="number" step="0.01" name="price" value="{{ car.price }}" placeholder="Preço" class="border rounded px-3 py-2" required>
+      <textarea name="description" placeholder="Descrição" class="border rounded px-3 py-2" rows="4" required>{{ car.description }}</textarea>
+      <input type="file" name="image" class="border rounded px-3 py-2">
     </div>
-  
-    {% if form.errors %}
-      {% for field in form %}
-        {% for error in field.errors %}
-          <div class="mb-5 p-4 rounded-xl bg-red-300 text-white">
-            <p>{{ error|escape }}</p>
-          </div>
-        {% endfor %}
-      {% endfor %}
-    {% endif %}
-  
-    <button type=""submit id="botao-criar-produto"class="w-full text-base text-white mt-4 bg-sky-500 hover:bg-sky-600 transition-colors px-4 py-2 rounded-lg">Atualizar produto</button>
+
+    <button type="submit" id="botao-criar-produto" class="w-full text-base text-white mt-4 bg-sky-500 hover:bg-sky-600 transition-colors px-4 py-2 rounded-lg">Atualizar produto</button>
   </form>
 </div>
 {% endblock %}
