@@ -1,4 +1,4 @@
-## CarTech
+<img width="1710" alt="Captura de Tela 2025-04-07 às 23 52 21" src="https://github.com/user-attachments/assets/85a4d006-0b0f-439b-9c6b-4b4fd3322f46" />## CarTech
 ## A CarTech é a sua plataforma inovadora para compra, venda e exposição de veículos. Com um sistema moderno e intuitivo, conectamos compradores e vendedores de forma rápida, segura e eficiente.
 Nosso diferencial está na transparência e tecnologia, proporcionando uma experiência única para quem deseja adquirir ou revender um carro. Além disso, oferecemos um espaço exclusivo para exposição de veículos, permitindo que colecionadores, entusiastas e concessionárias apresentem seus modelos de forma profissional e atrativa. Seja para encontrar o carro dos seus sonhos, vender com facilidade ou simplesmente exibir sua máquina, a CarTech é o lugar certo!
 
@@ -36,7 +36,7 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 
 
 ## foto do bug tracker
-*
+* <img width="1710" alt="bugTracker" src="https://github.com/user-attachments/assets/323586af-6cb3-4054-9fc8-578491dac092" />
 
 ## relato programação em pares
 * Durante o desenvolvimento do projeto, tentamos usar a técnica de programação em pares por um dia, buscando melhorar a colaboração e acelerar o trabalho. No entanto, surgiram muitos conflitos de ideias e diferenças no ritmo de raciocínio, o que acabou tornando o processo menos produtivo.
