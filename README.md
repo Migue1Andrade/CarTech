@@ -44,6 +44,9 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 ## link da azure com projeto
 * https://cartechfds.azurewebsites.net/
 
+## link do screencast
+* https://youtu.be/zZFo0YjY1nI
+
 ## print do jira apos finalizacao da primeira sprint
 * <img width="1366" alt="sprint1" src="https://github.com/user-attachments/assets/5f030b29-8fcf-4891-89d4-4768ce475bac" />
 
