@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wfc@w8cj_#)w%y%k0z00s7tl!nr!wg6d#0o%$wfkr^1t6+591(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["cartechfds.azurewebsites.net"]
 
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
