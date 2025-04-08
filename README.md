@@ -25,3 +25,19 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 
 ## foto do jira entrega 1
 <img width="1143" alt="Captura de Tela 2025-03-19 às 21 37 12" src="https://github.com/user-attachments/assets/b6471def-3a97-4c9c-821f-0a316f1b4ac0" />
+
+#entrega 02
+## foto do backlog
+![backlogentrega02](https://github.com/user-attachments/assets/13407fe8-0cab-4d6e-8736-0f0d9aecbc83)
+
+
+## foto do quadro da sprint
+![quadrosprintentrega02](https://github.com/user-attachments/assets/b6996364-e549-4d0a-8e20-67192854ef12)
+
+
+## foto do bug tracker
+*
+
+## relato programação em pares
+* Durante o desenvolvimento do projeto, tentamos usar a técnica de programação em pares por um dia, buscando melhorar a colaboração e acelerar o trabalho. No entanto, surgiram muitos conflitos de ideias e diferenças no ritmo de raciocínio, o que acabou tornando o processo menos produtivo.
+Diante disso, optamos por dividir as tarefas individualmente, de acordo com as habilidades e preferências de cada um. Essa abordagem se mostrou mais eficiente, permitindo um melhor foco e andamento do projeto. Ainda assim, consideramos a experiência da programação em pares válida, pois nos ajudou a entender melhor os desafios da colaboração em equipe.
