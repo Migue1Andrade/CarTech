@@ -28,11 +28,11 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 
 #entrega 02
 ## foto do backlog
-*![backlogentrega02](https://github.com/user-attachments/assets/13407fe8-0cab-4d6e-8736-0f0d9aecbc83)
+![backlogentrega02](https://github.com/user-attachments/assets/13407fe8-0cab-4d6e-8736-0f0d9aecbc83)
 
 
 ## foto do quadro da sprint
-*![quadrosprintentrega02](https://github.com/user-attachments/assets/b6996364-e549-4d0a-8e20-67192854ef12)
+![quadrosprintentrega02](https://github.com/user-attachments/assets/b6996364-e549-4d0a-8e20-67192854ef12)
 
 
 ## foto do bug tracker
