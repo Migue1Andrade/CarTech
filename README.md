@@ -40,5 +40,4 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 
 ## relato programação em pares
 * Durante o desenvolvimento do projeto, tentamos usar a técnica de programação em pares por um dia, buscando melhorar a colaboração e acelerar o trabalho. No entanto, surgiram muitos conflitos de ideias e diferenças no ritmo de raciocínio, o que acabou tornando o processo menos produtivo.
-
 Diante disso, optamos por dividir as tarefas individualmente, de acordo com as habilidades e preferências de cada um. Essa abordagem se mostrou mais eficiente, permitindo um melhor foco e andamento do projeto. Ainda assim, consideramos a experiência da programação em pares válida, pois nos ajudou a entender melhor os desafios da colaboração em equipe.
