@@ -26,7 +26,7 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 ## foto do jira entrega 1
 <img width="1143" alt="Captura de Tela 2025-03-19 às 21 37 12" src="https://github.com/user-attachments/assets/b6471def-3a97-4c9c-821f-0a316f1b4ac0" />
 
-#entrega 02
+# entrega 02
 ## foto do backlog
 ![backlogentrega02](https://github.com/user-attachments/assets/13407fe8-0cab-4d6e-8736-0f0d9aecbc83)
 
