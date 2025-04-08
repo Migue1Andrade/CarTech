@@ -14,7 +14,7 @@ Nosso diferencial está na transparência e tecnologia, proporcionando uma exper
 * https://docs.google.com/document/d/14qaRBfjsW6TjoHn5hw-XrwBkPvVugJET0_-HATUGr8k/edit?tab=t.0
 
 ## link para o jira
-* https://cartech.atlassian.net/jira/software/projects/KAN/boards/1
+* https://cartec.atlassian.net/jira/software/projects/CAR/boards/1
 
 ## link para o figma
 * https://www.figma.com/design/gB3OKDkQhzJjvEvlXsjwm8/carTech?node-id=0-1&p=f&t=cK5x2RcNyHYmJue3-0
