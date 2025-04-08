@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wfc@w8cj_#)w%y%k0z00s7tl!nr!wg6d#0o%$wfkr^1t6+591('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ["cartechfds.azurewebsites.net"]
+CSRF_TRUSTED_ORIGINS = ['https://cartechfds.azurewebsites.net']
+ALLOWED_HOSTS = ['cartechfds.azurewebsites.net']
+DEBUG = False
 
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
