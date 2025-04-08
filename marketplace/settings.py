@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["cartechfds.azurewebsites.net"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://cartechfds.azurewebsites.net",
+]
+
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
