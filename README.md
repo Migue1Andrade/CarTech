@@ -52,13 +52,13 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 
 # entrega 03
 ## foto do backlog
-* <img width="1366" alt="backlog2" src="https://github.com/user-attachments/assets/128c2473-e69a-48cf-a886-75e04e3c8c7b" />
+<img width="1366" alt="backlog2" src="https://github.com/user-attachments/assets/128c2473-e69a-48cf-a886-75e04e3c8c7b" />
 
 ## foto do quadro da sprint
-* <img width="1366" alt="sprint2" src="https://github.com/user-attachments/assets/8e3968ff-5576-4ede-9918-1829ebc7006d" />
+<img width="1366" alt="sprint2" src="https://github.com/user-attachments/assets/8e3968ff-5576-4ede-9918-1829ebc7006d" />
 
 ## foto do bugtracker
-* <img width="1366" alt="bugtracker2" src="https://github.com/user-attachments/assets/4fba291a-11e8-420c-ad70-992fde710783" />
+<img width="1366" alt="bugtracker2" src="https://github.com/user-attachments/assets/4fba291a-11e8-420c-ad70-992fde710783" />
 
 ## screencast figma
 
