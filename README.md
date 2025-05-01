@@ -69,6 +69,9 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 ## screencast testes
 * https://youtu.be/AOmAen7o9rI
 
+## screencast deploy automatizado
+*https://youtu.be/aca_VpDFvp0
+
 ## progamação em pares
 * Durante o desenvolvimento do projeto, decidimos experimentar a técnica de programação em pares por um dia, com o objetivo de melhorar a colaboração, compartilhar conhecimentos e acelerar a entrega das funcionalidades. No entanto, ao longo da prática, enfrentamos alguns desafios, como conflitos de ideias, diferenças no ritmo de raciocínio e estilos distintos de codificação. Esses fatores acabaram comprometendo a produtividade e tornando o processo mais lento do que o esperado.
 
