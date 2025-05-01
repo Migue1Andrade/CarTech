@@ -50,3 +50,13 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 ## print do jira apos finalizacao da primeira sprint
 * <img width="1366" alt="sprint1" src="https://github.com/user-attachments/assets/5f030b29-8fcf-4891-89d4-4768ce475bac" />
 
+#entrega 03
+## foto do backlog
+
+## foto do quadro da sprint
+
+## foto do bugtracker
+
+## screencast figma
+
+## screencast historias implementadas
