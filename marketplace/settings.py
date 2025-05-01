@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wfc@w8cj_#)w%y%k0z00s7tl!nr!wg6d#0o%$wfkr^1t6+591(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["cartechfds.azurewebsites.net"]
+ALLOWED_HOSTS = ["cartechfds.azurewebsites.net", "127.0.0.1", "localhost"]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://cartechfds.azurewebsites.net",
