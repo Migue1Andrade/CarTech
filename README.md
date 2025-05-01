@@ -69,3 +69,9 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 ## screencast testes
 * https://youtu.be/AOmAen7o9rI
 
+## progamação em pares
+* Durante o desenvolvimento do projeto, decidimos experimentar a técnica de programação em pares por um dia, com o objetivo de melhorar a colaboração, compartilhar conhecimentos e acelerar a entrega das funcionalidades. No entanto, ao longo da prática, enfrentamos alguns desafios, como conflitos de ideias, diferenças no ritmo de raciocínio e estilos distintos de codificação. Esses fatores acabaram comprometendo a produtividade e tornando o processo mais lento do que o esperado.
+
+Diante desse cenário, optamos por adotar uma abordagem mais flexível, dividindo as tarefas de forma individual, alinhadas às habilidades e preferências de cada membro da equipe. Essa estratégia se mostrou mais eficiente, permitindo que cada um focasse melhor em suas responsabilidades e contribuísse de maneira mais produtiva para o andamento do projeto.
+
+Apesar das dificuldades encontradas, consideramos a experiência com a programação em pares válida e enriquecedora, pois nos proporcionou uma visão mais clara sobre os desafios da colaboração em equipe, reforçou a importância da comunicação e destacou a necessidade de adaptação às diferentes formas de trabalho. Essa vivência certamente contribuirá para futuras interações e para o fortalecimento do trabalho em equipe.
