@@ -61,7 +61,7 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 <img width="1366" alt="bugtracker2" src="https://github.com/user-attachments/assets/4fba291a-11e8-420c-ad70-992fde710783" />
 
 ## screencast figma
-*
+* https://youtu.be/6KfBZA6skw0
 
 ## screencast historias implementadas
 * https://youtu.be/vq5WciubAmA
