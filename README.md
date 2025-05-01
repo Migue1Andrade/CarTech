@@ -62,4 +62,5 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 ## screencast historias implementadas
 
 ## screencast testes
+* https://youtu.be/AOmAen7o9rI
 
