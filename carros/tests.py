@@ -5,13 +5,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 def setUp():
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--icognito') 
-        browser = webdriver.Chrome(options=chrome_options)
-        browser.maximize_window()
-        return browser   
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--incognito')  # Corrigido: '--icognito' -> '--incognito'
+    browser = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+    browser.maximize_window()
+    return browser 
 #teste
 
 class MySeleniumTest(LiveServerTestCase):
@@ -42,9 +44,9 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'logar').click()
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
-        input_user.send_keys('decoburle')
+        input_user.send_keys('AndreBurle')
         sleep(3)
-        input_senha.send_keys('Cartech')
+        input_senha.send_keys('admin123!')
         browser.find_element(By.ID,'login-registrar').click()
         sleep(3)
 
@@ -59,8 +61,8 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'logar').click()
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
-        input_user.send_keys('decoburle')
-        input_senha.send_keys('Cartech')
+        input_user.send_keys('AndreBurle')
+        input_senha.send_keys('admin123!')
         browser.find_element(By.ID,'login-registrar').click()
         sleep(3)
 
@@ -125,8 +127,8 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'logar').click()
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
-        input_user.send_keys('decoburle')
-        input_senha.send_keys('Cartech')
+        input_user.send_keys('AndreBurle')
+        input_senha.send_keys('admin123!')
         browser.find_element(By.ID,'login-registrar').click()
         browser.find_element(By.ID,'botao-meus-anuncios').click()
         sleep(3)
@@ -143,8 +145,8 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'logar').click()
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
-        input_user.send_keys('decoburle')
-        input_senha.send_keys('Cartech')
+        input_user.send_keys('AndreBurle')
+        input_senha.send_keys('admin123!')
         browser.find_element(By.ID,'login-registrar').click()
         browser.find_element(By.ID,'home').click()
         sleep(3)
@@ -174,8 +176,8 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'logar').click()
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
-        input_user.send_keys('decoburle')
-        input_senha.send_keys('Cartech')
+        input_user.send_keys('AndreBurle')
+        input_senha.send_keys('admin123!')
         browser.find_element(By.ID,'login-registrar').click()
         sleep(3)
         
@@ -227,8 +229,8 @@ class MySeleniumTest(LiveServerTestCase):
          browser.find_element(By.ID,'logar').click()
          input_user = browser.find_element(By.ID,'user')
          input_senha = browser.find_element(By.ID,'senha')
-         input_user.send_keys('decoburle')
-         input_senha.send_keys('Cartech')
+         input_user.send_keys('miguelandrade')
+         input_senha.send_keys('admin123!')
          browser.find_element(By.ID,'login-registrar').click()
          sleep(3)
 
@@ -279,8 +281,8 @@ class MySeleniumTest(LiveServerTestCase):
          browser.find_element(By.ID,'logar').click()
          input_user = browser.find_element(By.ID,'user')
          input_senha = browser.find_element(By.ID,'senha')
-         input_user.send_keys('decoburle')
-         input_senha.send_keys('Cartech')
+         input_user.send_keys('miguelfranca')
+         input_senha.send_keys('admin123!')
          browser.find_element(By.ID,'login-registrar').click()
          sleep(3)
         
@@ -304,8 +306,8 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'logar').click()
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
-        input_user.send_keys('decoburle')
-        input_senha.send_keys('Cartech')
+        input_user.send_keys('AndreBurle')
+        input_senha.send_keys('admin123!')
         browser.find_element(By.ID,'login-registrar').click()
         sleep(3)
 
