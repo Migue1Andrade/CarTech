@@ -84,10 +84,8 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 
 ## Histórias selecionadas para a Sprint 03
 * Foram selecionadas pelo menos duas novas histórias para implementação.
-* Link do quadro JIRA atualizado:
-  * https://cartec.atlassian.net/jira/software/projects/CAR/boards/1  
 * ![print do quadro da sprint 03](https://github.com/user-attachments/assets/d4374ea5-4a37-4d17-b88f-bcc804fbce94)
-*![print do backlog](https://github.com/user-attachments/assets/54410bde-616d-42c6-84f9-2a23ca8aaa41)
+* ![print do backlog](https://github.com/user-attachments/assets/54410bde-616d-42c6-84f9-2a23ca8aaa41)
 ---
 
 ## Protótipos de Lo-Fi atualizados
