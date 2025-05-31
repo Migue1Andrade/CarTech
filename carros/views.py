@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from carros.models import Car
-from django.http import JsonResponse, HttpResponseRedirect
-from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from django.contrib import messages
+
+from carros.models import Car
+
 
 @login_required
 def new(request):
@@ -20,7 +22,7 @@ def new(request):
         description = request.POST.get('description')
         image = request.FILES.get('image')
 
-        car = Car.objects.create(
+        Car.objects.create(
             car_model=car_model,
             brand=brand,
             year=year,
@@ -33,11 +35,14 @@ def new(request):
             image=image,
             created_by=request.user
         )
+
+        messages.success(request, "Anúncio criado com sucesso!")
         return redirect('home')
-    
+
     return render(request, 'carros/form.html', {
         'title': 'Novo Anúncio'
     })
+
 
 @login_required
 def edit(request, pk):
@@ -59,16 +64,17 @@ def edit(request, pk):
             car.image = request.FILES['image']
 
         car.save()
+        messages.success(request, "Anúncio atualizado com sucesso!")
         return redirect('carros:pdp', pk=car.id)
 
-    return render(request, 'carros/edit-form.html', {
-        'car': car
-    })
+    return render(request, 'carros/edit-form.html', {'car': car})
+
 
 @login_required
 def car_list(request):
-    objects = Car.objects.filter(created_by=request.user, is_sold=False)
-    return render(request, 'carros/description.html', {'carros': objects})
+    carros = Car.objects.filter(created_by=request.user, is_sold=False)
+    return render(request, 'carros/description.html', {'carros': carros})
+
 
 def plp(request):
     search = request.GET.get('search')
@@ -119,9 +125,11 @@ def plp(request):
 
     return render(request, 'carros/paginadelistagem.html', context)
 
+
 def pdp(request, pk):
     car = get_object_or_404(Car, pk=pk)
     return render(request, 'carros/paginadedescricao.html', {'car': car})
+
 
 @login_required
 def finalize(request, car_id):
@@ -129,6 +137,8 @@ def finalize(request, car_id):
     if car.created_by == request.user:
         car.is_sold = True
         car.save()
+        messages.success(request, "Anúncio marcado como vendido.")
         return HttpResponseRedirect(reverse('carros:pdp', args=[car_id]))
     else:
+        messages.error(request, "Você não tem permissão para finalizar este anúncio.")
         return redirect('home')
