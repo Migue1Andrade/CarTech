@@ -84,8 +84,8 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 
 ## Histórias selecionadas para a Sprint 03
 * Foram selecionadas pelo menos duas novas histórias para implementação.
-* ![print do quadro da sprint 03](https://github.com/user-attachments/assets/d4374ea5-4a37-4d17-b88f-bcc804fbce94)
-* ![print do backlog](https://github.com/user-attachments/assets/54410bde-616d-42c6-84f9-2a23ca8aaa41)
+* ![print do quadro da sprint 03](https://github.com/user-attachments/assets/c5b34ec0-2e2c-4650-8d9c-949f3a9c4831)
+* ![print do backlog](https://github.com/user-attachments/assets/116c22ce-2e84-404b-8f44-eff6d9954510)
 ---
 
 ## Protótipos de Lo-Fi atualizados
@@ -108,7 +108,7 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 ## Uso do Issue/Bug Tracker (GitHub)
 * Utilizamos o sistema de issues do GitHub para acompanhar bugs e tarefas.
 * Print da tela do bug tracker:
-  * ![print do bug tracker](https://github.com/user-attachments/assets/5f4b5f98-0aac-4266-8961-bed3345de482)
+  * ![print do bug tracker](https://github.com/user-attachments/assets/005f548f-7c50-4c16-899d-301eb69aeac2)
 
 ---
 
