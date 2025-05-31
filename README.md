@@ -86,8 +86,8 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 * Foram selecionadas pelo menos duas novas histórias para implementação.
 * Link do quadro JIRA atualizado:
   * https://cartec.atlassian.net/jira/software/projects/CAR/boards/1  
-* ![print do quadro da sprint 03]()
-
+* ![print do quadro da sprint 03](https://github.com/user-attachments/assets/d4374ea5-4a37-4d17-b88f-bcc804fbce94)
+*![print do backlog](https://github.com/user-attachments/assets/54410bde-616d-42c6-84f9-2a23ca8aaa41)
 ---
 
 ## Protótipos de Lo-Fi atualizados
@@ -96,11 +96,6 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
   * https://www.figma.com/design/gB3OKDkQhzJjvEvlXsjwm8/carTech?node-id=0-1  
 * Screencast apresentando os protótipos e novas histórias:
   * 
-
----
-
-## Ambiente de versionamento atuante
-* Utilizamos controle de versão com GitHub e realizamos commits frequentes (mínimo semanais).
 
 ---
 
@@ -115,7 +110,7 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 ## Uso do Issue/Bug Tracker (GitHub)
 * Utilizamos o sistema de issues do GitHub para acompanhar bugs e tarefas.
 * Print da tela do bug tracker:
-  * ![print do bug tracker]()
+  * ![print do bug tracker](https://github.com/user-attachments/assets/5f4b5f98-0aac-4266-8961-bed3345de482)
 
 ---
 
