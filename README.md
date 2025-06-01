@@ -93,13 +93,13 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 * Link para o Figma:  
   * https://www.figma.com/design/gB3OKDkQhzJjvEvlXsjwm8/carTech?node-id=0-1  
 * Screencast apresentando os protótipos e novas histórias:
-  * 
+  * https://youtu.be/c6OONHIQSK4
 
 ---
 
 ## Deployment das novas histórias
 * Screencast com ênfase nas histórias implementadas:  
-  * 
+  * https://youtu.be/eRlj4e5Rl30
 * A URL de acesso utilizada no vídeo:  
   * https://cartechfds.azurewebsites.net/
 
@@ -122,7 +122,7 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 ## CI/CD com build e deployment automatizado
 * Pipeline foi alterado para incluir testes automatizados.
 * Screencast do processo de CI/CD:
-  *
+  * https://youtu.be/H2Qef7du4hs
 
 ---
 
