@@ -115,7 +115,7 @@ Apesar das dificuldades encontradas, consideramos a experiência com a programa�
 ## Testes de Sistema (E2E) automatizados
 * Implementamos testes de ponta a ponta utilizando Cypress.
 * Screencast da execução dos testes:
-  *
+  * https://youtu.be/UdNjhUtF-Y4
 
 ---
 
