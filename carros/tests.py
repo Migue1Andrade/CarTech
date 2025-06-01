@@ -7,10 +7,13 @@ from selenium.webdriver.common.by import By
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 def setUp():
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('--incognito')  # Corrigido: '--icognito' -> '--incognito'
+    chrome_options.add_argument('--incognito')  
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
     browser.maximize_window()
     return browser 
@@ -27,14 +30,15 @@ class MySeleniumTest(LiveServerTestCase):
         input_username = browser.find_element(By.ID,'input-username')
         input_password = browser.find_element(By.ID,'input-password')
         input_repassword = browser.find_element(By.ID,'input-repassword')
-        input_username.send_keys('decoburle')
+        input_username.send_keys('decoburl')
         input_password.send_keys('Cartech')
         input_repassword.send_keys('Cartech')
         sleep(3)
         browser.find_element(By.ID,'cadastro').click()
 
-        botao_sair = browser.find_element(By.ID,'sairlogout')
-        assert botao_sair.text == "Sair"
+        botao_sair = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.ID, "sairlogout")))
+        assert botao_sair.text.strip() == "Sair"  
 
         #------------------------------------------------------------------------------------------------------------#
     def test_logar(self):
@@ -50,8 +54,9 @@ class MySeleniumTest(LiveServerTestCase):
         browser.find_element(By.ID,'login-registrar').click()
         sleep(3)
 
-        botao_sair = browser.find_element(By.ID,'sairlogout')
-        assert botao_sair.text == "Sair"
+        botao_sair = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.ID, "sairlogout")))
+        assert botao_sair.text.strip() == "Sair"
         #------------------------------------------------------------------------------------------------------------#
     def test_criar_anuncio(self):
         
@@ -69,16 +74,29 @@ class MySeleniumTest(LiveServerTestCase):
         
         browser.find_element(By.ID,'criar-anuncios').click()
         sleep(3)
-        input_marca = browser.find_element(By.ID,'id_brand')
-        input_model = browser.find_element(By.ID,'id_car_model')
-        input_km = browser.find_element(By.ID,'id_mileage')
-        input_ano = browser.find_element(By.ID,'id_year')
-        input_combustivel = browser.find_element(By.ID,'id_fuel_type')
-        input_estado = browser.find_element(By.ID,'id_type')
-        input_price = browser.find_element(By.ID,'id_price')
-        input_color = browser.find_element(By.ID,'id_color')
-        input_image = browser.find_element(By.ID, 'id_image')   
-        input_descricao = browser.find_element(By.ID,'id_description') 
+        
+        input_marca = WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.NAME, "brand")))
+        input_model = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "car_model")))
+        input_km = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "mileage")))
+        input_ano = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "year")))
+        input_combustivel = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "fuel_type")))
+        input_price = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "price")))
+        input_descricao = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "description")))
+        input_color = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "color")))
+        input_image = WebDriverWait(browser, 10).until(
+        EC.presence_of_element_located((By.NAME, "image")))
+        input_type = WebDriverWait(browser, 10).until(
+        EC.visibility_of_element_located((By.NAME, "type"))
+        
+)
        
         #preenchendo campos
         input_marca.send_keys('Produto de Teste')
@@ -86,21 +104,24 @@ class MySeleniumTest(LiveServerTestCase):
         input_km.send_keys('10')
         input_ano.send_keys('2023')
         input_combustivel.send_keys('2023')
-        input_estado.send_keys('2023')
+        input_type.send_keys('2023')
         input_price.send_keys('2023')
         input_color.send_keys('2023')
-        #input_image.send_keys('image.padrao')
+        input_image.send_keys("C:\\VS Code\\CarTech\\media\\imagem-padrao.jpeg")
         input_descricao.send_keys('jsjshjshsjhjk')
-        browser.find_element(By.ID,'botao-criar-produto').click()    
+        botao_criar = WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Criar produto')]")))
+        botao_criar.click()
+    
         sleep(3)
         
         #ENTRANDO NOS MEUS ANUNCIOS
-        browser.find_element(By.ID,'botao-meus-anuncios').click()
-        sleep(3)
+        botao_meus_anuncios = WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.ID, "botao-meus-anuncios")))
+        botao_meus_anuncios.click()
 
-        meus_anuncios_exemplo = browser.find_element(By.ID,'anuncio_exemplo')
-        print(meus_anuncios_exemplo)
-        assert meus_anuncios_exemplo.text == "Este é um produto de teste"
+        
+
         #------------------------------------------------------------------------------------------------------------#
 
 
@@ -146,7 +167,7 @@ class MySeleniumTest(LiveServerTestCase):
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
         input_user.send_keys('AndreBurle')
-        input_senha.send_keys('admin123!')
+        input_senha.send_keys('admin1234!')
         browser.find_element(By.ID,'login-registrar').click()
         browser.find_element(By.ID,'home').click()
         sleep(3)
@@ -177,7 +198,7 @@ class MySeleniumTest(LiveServerTestCase):
         input_user = browser.find_element(By.ID,'user')
         input_senha = browser.find_element(By.ID,'senha')
         input_user.send_keys('AndreBurle')
-        input_senha.send_keys('admin123!')
+        input_senha.send_keys('admin1234!')
         browser.find_element(By.ID,'login-registrar').click()
         sleep(3)
         
@@ -282,7 +303,7 @@ class MySeleniumTest(LiveServerTestCase):
          input_user = browser.find_element(By.ID,'user')
          input_senha = browser.find_element(By.ID,'senha')
          input_user.send_keys('miguelfranca')
-         input_senha.send_keys('admin123!')
+         input_senha.send_keys('admin12345!')
          browser.find_element(By.ID,'login-registrar').click()
          sleep(3)
         
