@@ -78,3 +78,55 @@ Diante disso, optamos por dividir as tarefas individualmente, de acordo com as h
 Diante desse cenário, optamos por adotar uma abordagem mais flexível, dividindo as tarefas de forma individual, alinhadas às habilidades e preferências de cada membro da equipe. Essa estratégia se mostrou mais eficiente, permitindo que cada um focasse melhor em suas responsabilidades e contribuísse de maneira mais produtiva para o andamento do projeto.
 
 Apesar das dificuldades encontradas, consideramos a experiência com a programação em pares válida e enriquecedora, pois nos proporcionou uma visão mais clara sobre os desafios da colaboração em equipe, reforçou a importância da comunicação e destacou a necessidade de adaptação às diferentes formas de trabalho. Essa vivência certamente contribuirá para futuras interações e para o fortalecimento do trabalho em equipe.
+
+
+# Entrega 04
+
+## Histórias selecionadas para a Sprint 03
+* Foram selecionadas pelo menos duas novas histórias para implementação.
+* ![print do quadro da sprint 03](https://github.com/user-attachments/assets/c5b34ec0-2e2c-4650-8d9c-949f3a9c4831)
+* ![print do backlog](https://github.com/user-attachments/assets/116c22ce-2e84-404b-8f44-eff6d9954510)
+---
+
+## Protótipos de Lo-Fi atualizados
+* Foram criados novos sketches e storyboards para representar as histórias da nova sprint.
+* Link para o Figma:  
+  * https://www.figma.com/design/gB3OKDkQhzJjvEvlXsjwm8/carTech?node-id=0-1  
+* Screencast apresentando os protótipos e novas histórias:
+  * 
+
+---
+
+## Deployment das novas histórias
+* Screencast com ênfase nas histórias implementadas:  
+  * 
+* A URL de acesso utilizada no vídeo:  
+  * https://cartechfds.azurewebsites.net/
+
+---
+
+## Uso do Issue/Bug Tracker (GitHub)
+* Utilizamos o sistema de issues do GitHub para acompanhar bugs e tarefas.
+* Print da tela do bug tracker:
+  * ![print do bug tracker](https://github.com/user-attachments/assets/005f548f-7c50-4c16-899d-301eb69aeac2)
+
+---
+
+## Testes de Sistema (E2E) automatizados
+* Implementamos testes de ponta a ponta utilizando Cypress.
+* Screencast da execução dos testes:
+  *
+
+---
+
+## CI/CD com build e deployment automatizado
+* Pipeline foi alterado para incluir testes automatizados.
+* Screencast do processo de CI/CD:
+  *
+
+---
+
+## Atualização sobre o uso da Programação em Pares
+* Incremento ao relato anterior:
+
+> Nesta sprint, experimentamos novamente a técnica de programação em pares. Apesar dos desafios anteriores, conseguimos melhorar a comunicação e alternar entre tarefas simples e complexas. A experiência foi mais produtiva desta vez, especialmente na implementação de testes automatizados e integração do CI/CD. Mesmo que continuemos dividindo algumas tarefas individualmente, momentos pontuais de programação em dupla foram essenciais para garantir qualidade e aprendizado.
